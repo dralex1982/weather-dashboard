@@ -22,7 +22,8 @@ export default function  SearchBar({onSearch}: SearchBarProps) {
     return (
         <div className="flex gap-2 mb-6">
             <input
-                className="flex-1 px-4 py-2 rounded-xl border border-gray-300 outline-none"
+                className="flex-1 px-4 py-2 rounded-xl border border-gray-300 outline-none
+                text-gray-800 dark:text-white "
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
                 onKeyDown={handleKeyDown}
